@@ -4,7 +4,8 @@ Uses twitter bootstrap and the MEAN stack technology for the CRUD function with 
 ##Installing
 Run "npm install" to istall all the dependencies modules
 
-##then
+##Running the app
+Run "node server.js"
 Go to http://localhost:3000
 
 #Screenshots
