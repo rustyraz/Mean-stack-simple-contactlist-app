@@ -14,6 +14,8 @@ app.get('/contactlist',function(req,res){
 	});
 });
 
+
+
 app.post('/contactlist',function(req,res){
 	//console.log(req.body);
 	db.contactlist.insert(req.body,function(err,docs){
@@ -21,8 +23,10 @@ app.post('/contactlist',function(req,res){
 	});
 });
 
-app.get('/api',function(req,res){
-	res.send('api running here');
+app.get('/api/user/:id',function(req,res){
+	//var id = req.param('id');
+	var id = req.params.id;
+	res.send('user id : '+id);
 });
 
 app.delete('/contactlist/:id',function(req,res){
